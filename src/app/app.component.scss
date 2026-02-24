@@ -1,0 +1,34 @@
+.app-loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #fafafa;
+}
+
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+
+  .loading-text {
+    margin-top: 1rem;
+    //color: #482e53;
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+
+  mat-spinner {
+    ::ng-deep circle {
+      //stroke: #482e53;
+    }
+  }
+}
